@@ -69,27 +69,126 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
+                    <asp:HiddenField ID="hdnID" runat="server" />
                     <div style="height: 15vh; display: flex; justify-content: center; align-items: center;">
                     <asp:Button Text="SUBMIT" ID="btnsubmit" CssClass="btn btn-primary" Width="170px" runat="server" BackColor="#33CCFF" ForeColor="Black" OnClick="btnsubmit_Click" />
                     <asp:Button Text="UPDATE" ID="btnsubmit1" CssClass="btn btn-primary" Width="170px" runat="server" BackColor="Lime" ForeColor="Black" OnClick="btnsubmit1_Click" />
-                    <asp:Button Text="DELETE" ID="btnsubmit2" CssClass="btn btn-primary" Width="170px" runat="server" BackColor="Red" ForeColor="Black" OnClick="btnsubmit2_Click" />
-                    <asp:Button Text="SEARCH" ID="btnsubmit3" CssClass="btn btn-primary" Width="170px" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="btnsubmit3_Click" />
-                    <asp:Button Text="GET" ID="btnsubmit4" CssClass="btn btn-primary" Width="170px" runat="server" BackColor="#FF9900" ForeColor="Black" OnClick="btnsubmit4_Click" />
+                  
+                    <%--<asp:Button Text="SEARCH" ID="btnsubmit3" CssClass="btn btn-primary" Width="170px" runat="server" BackColor="Yellow" ForeColor="Black" OnClick="btnsubmit3_Click" />--%>
+                   
                </div>
                         <div style="width: 80%; margin: auto;">
-            <asp:GridView 
-    ID="GridView1" 
-    runat="server" 
-    AutoGenerateColumns="true"
-    GridLines="Both"
-    BorderStyle="Solid"
-    BorderWidth="1"
-    BorderColor="Black"
-    CellPadding="5"
-    CellSpacing="0"
-    HeaderStyle-BackColor="#CCCCCC"
-    HeaderStyle-Font-Bold="true" 
-/>
+          <%--<asp:GridView ID="grdCanDtls" runat="server" DataKeyNames="id">
+    <Columns>
+
+        <asp:BoundField DataField="fname" HeaderText="FirstName" Visible="False" ReadOnly="True" />
+        <asp:BoundField DataField="lname" HeaderText="LastName" Visible="False" ReadOnly="True"  />
+        <asp:BoundField DataField="address" HeaderText="Address" Visible="False" ReadOnly="True"  />
+
+        <asp:BoundField DataField="dob" HeaderText="DOB" Visible="False" ReadOnly="True" />
+
+        <asp:BoundField DataField="email" HeaderText="Email" Visible="False" ReadOnly="True" />
+        <asp:BoundField DataField="mobnum" HeaderText="MobileNum" Visible="False" ReadOnly="True"  />
+
+       <asp:TemplateField HeaderText= "Actions" ShowHeader="True">
+            <ItemTemplate>
+                <asp:LinkButton ID="Delete" runat="server" DataKeyNames="id" CommandName="DeleteRow" CommandArgument='<%# Eval("id") %>>' OnClick = "Delete_Click" > Delete </asp:LinkButton>
+                <asp:LinkButton ID="Edit" runat="server" DataKeyNames="id" CommandName="EditRow" CommandArgument='<%# Container.DataItemIndex %>' OnClick = "Edit_Click" > Edit </asp:LinkButton>
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:LinkButton ID="Update" runat="server" DataKeyNames="id" CommandName="UpdateRow" CommandArgument='<%# Container.DataItemIndex %>' OnClick = "Update_Click" > Update  </asp:LinkButton>
+                    <asp:LinkButton ID="Cancel" runat="server" DataKeyNames="id" CommandName="CancelRow" CommandArgument='<%# Container.DataItemIndex %>' OnClick = "Cancel_Click" > Cancel  </asp:LinkButton>
+                </EditItemTemplate>
+            
+        </asp:TemplateField>
+
+    </Columns>
+           </asp:GridView>--%>
+             <asp:GridView ID="grdCanDtls" runat="server" AutoGenerateColumns="False" DataKeyNames="id" 
+    OnRowEditing="grdCanDtls_RowEditing"
+    OnRowUpdating="grdCanDtls_RowUpdating"
+    OnRowCancelingEdit="grdCanDtls_RowCancelingEdit"
+    OnRowDeleting="grdCanDtls_RowDeleting">
+
+    <Columns>
+        <asp:BoundField DataField="id" HeaderText="ID" ReadOnly="True" />
+
+        <asp:TemplateField HeaderText="First Name">
+            <ItemTemplate>
+                <%# Eval("fname") %>
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:TextBox ID="txtEditFName" runat="server" Text='<%# Bind("fname") %>' />
+            </EditItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Last Name">
+            <ItemTemplate>
+                <%# Eval("lname") %>
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:TextBox ID="txtEditLName" runat="server" Text='<%# Bind("lname") %>' />
+            </EditItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Address">
+            <ItemTemplate>
+                <%# Eval("address") %>
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:TextBox ID="txtEditAddress" runat="server" Text='<%# Bind("address") %>' />
+            </EditItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="DOB">
+            <ItemTemplate>
+                <%# Convert.ToDateTime(Eval("dob")).ToString("dd/MM/yyyy") %>
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:TextBox ID="txtEditDOB" runat="server" Text='<%# Bind("dob", "{0:yyyy-MM-dd}") %>' TextMode="Date" />
+            </EditItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Email">
+            <ItemTemplate>
+                <%# Eval("email") %>
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:TextBox ID="txtEditEmail" runat="server" Text='<%# Bind("email") %>' />
+            </EditItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Mobile">
+            <ItemTemplate>
+                <%# Eval("mobnum") %>
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:TextBox ID="txtEditMobile" runat="server" Text='<%# Bind("mobnum") %>' />
+            </EditItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Actions">
+            <ItemTemplate>
+                <%--<asp:LinkButton ID="lnkEdit" runat="server" CommandName="Edit" Text="Edit" />--%>
+                
+                <asp:LinkButton ID="LinkButton1" runat="server" Text="Edit" CommandArgument='<%# Eval("id") %>' OnClick="Edit_Click" />
+
+
+                &nbsp;|&nbsp;
+                <asp:LinkButton ID="lnkDelete" runat="server" CommandName="Delete" Text="Delete" />
+            </ItemTemplate>
+            <EditItemTemplate>
+                <asp:LinkButton ID="lnkUpdate" runat="server" CommandName="Update" Text="Update" />
+                &nbsp;|&nbsp;
+                <asp:LinkButton ID="lnkCancel" runat="server" CommandName="Cancel" Text="Cancel" />
+
+                <%--<asp:LinkButton ID="Cancel" runat="server" OnClick="Cancel_Click">Cancel</asp:LinkButton>--%>
+
+            </EditItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+</asp:GridView>
+
             </div>
                </div>
             </div>
@@ -104,3 +203,4 @@
         </section>
 
 </asp:Content>
+
