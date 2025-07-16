@@ -1,0 +1,101 @@
+﻿@model RegistrationApp.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "Registration Form";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Registration Form</h4>
+                </div>
+                <div class="card-body">
+                    <form id="registrationForm" enctype="multipart/form-data">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="FName" class="form-label">First Name</label>
+                                <input type="text" id="FName" name="FName" class="form-control" required autocomplete="given-name" placeholder="Enter first name" />
+                            </div>
+                            <div class="col">
+                                <label for="LName" class="form-label">Last Name</label>
+                                <input type="text" id="LName" name="LName" class="form-control" required autocomplete="family-name" placeholder="Enter last name" />
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Address" class="form-label">Address</label>
+                            <input type="text" id="Address" name="Address" class="form-control" required autocomplete="street-address" placeholder="Enter your full address" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="DOB" class="form-label"></label>
+                            <input asp-for="DOB" class="form-control" type="date" />
+                            <span asp-validation-for="DOB" class="text-danger"></span>
+                            @* <label for="DOB" class="form-label">Date of Birth</label>
+                            <input type="date" id="DOB" name="DOB" class="form-control" required autocomplete="bday" /> *@
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" id="Email" name="Email" class="form-control" required autocomplete="email" placeholder="Enter your email" />
+                            </div>
+                            <div class="col">
+                                <label for="MobileNo" class="form-label">Mobile No</label>
+                                <input type="tel" id="MobileNo" name="MobileNo" class="form-control" required autocomplete="tel" placeholder="Enter your mobile number" />
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Image" class="form-label">Upload Image</label>
+                            <input type="file" id="Image" name="Image" class="form-control" />
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4">Register</button>
+                        </div>
+                    </form>
+
+                    <div id="resultMessage" class="mt-3 text-center fw-bold"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $("#registrationForm").submit(function (e) {         // This listens for the form submit event on the form with ID registrationForm
+            e.preventDefault();
+
+            var formData = new FormData(this);               // Creates a FormData object from the form
+
+            $.ajax({
+                url: '@Url.Action("Save", "Registration")',  // Hit the Save action in the RegistrationController
+                type: 'POST',
+                data: formData,
+                contentType: false,                          // FormData (including the file) is correctly sent to the server
+                processData: false,
+                success: function (res) {
+                    if (res.success) {
+                        $("#resultMessage").html(`<div class="alert alert-success">${res.message}</div>`);        // If the server returns { success: true, message: "Saved!" }, it shows a success message
+                        $("#registrationForm")[0].reset();                                                        // If there are validation errors (res.errors), it loops through and displays them
+                    } else {
+                        let errorText = res.message;
+                        if (res.errors) {
+                            errorText += "<br>" + Object.entries(res.errors)
+                                .map(([key, errs]) => `${key}: ${errs.join(", ")}`)
+                                .join("<br>");
+                        }
+                        $("#resultMessage").html(`<div class="alert alert-danger">${errorText}</div>`);
+                    }
+                },
+                error: function () {
+                    $("#resultMessage").html(`<div class="alert alert-danger">Something went wrong.</div>`);    // If the AJAX call fails (e.g., server error), it shows a general error
+                }
+            });
+        });
+    </script>
+}

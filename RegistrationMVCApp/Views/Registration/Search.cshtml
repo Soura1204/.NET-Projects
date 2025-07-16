@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Search & Edit Candidate";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+<div class="container mt-4">
+    <h2>Search Candidate</h2>
+    @* <input id="candidateSearch"
+           class="form-control"
+           placeholder="Type by name…" /> *@
+    <div class="position-relative">
+        <input id="candidateSearch" class="form-control pe-5" placeholder="Type by name…" />
+        <div id="searchSpinner" class="spinner-border spinner-border-sm text-primary position-absolute end-0 top-50 translate-middle-y me-2 d-none" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div id="candidateFormContainer" class="mt-4">
+        <!-- AJAX will inject the partial here -->
+    </div>
+</div>
+<style>
+    #candidateSearch.loading-spinner {
+        background-image: url('https://i.stack.imgur.com/FhHRx.gif');
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 20px 20px;
+        background-color: #fff; /* override autofill yellow */
+    }
+</style>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+          rel="stylesheet" />
+
+    <script>
+        // 1) autocomplete
+          $("#candidateSearch").autocomplete({
+          source: function (req, resp) {
+            $("#searchSpinner").removeClass("d-none"); // Show spinner
+
+            $.getJSON('@Url.Action("SearchCandidates")', { term: req.term })
+              .done(function (data) {
+                resp(data);
+              })
+              .always(function () {
+                $("#searchSpinner").addClass("d-none"); // Hide spinner
+              });
+          },
+          select: function (e, ui) {
+            $.get('@Url.Action("GetCandidatePartial")', { id: ui.item.value })
+              .done(function (html) {
+                $("#candidateFormContainer").html(html);
+              });
+          }
+        });
+        // 2) handle form submit via AJAX
+        $(document).on("submit", "#updateCandidateForm", function (e) {
+          e.preventDefault();
+          var $form = $(this),
+              data  = new FormData(this);
+
+          $.ajax({
+            url: '@Url.Action("UpdateCandidateFullDetails")',
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: data,
+            headers: {
+              RequestVerificationToken: $form.find("input[name=__RequestVerificationToken]").val()
+            }
+          })
+          .done(function (res) {
+            if (res.success) {
+              var id = $form.find("input[name='Registration.Id']").val();
+              $.get('@Url.Action("GetCandidatePartial")', { id: id })
+               .done(function (h) {
+                 $("#candidateFormContainer").html(h);
+                 alert("Updated successfully!");
+               });
+            }
+            else {
+              alert("❌ " + res.message);
+            }
+          })
+          .fail(function () {
+            alert("Error while updating candidate.");
+          });
+        });
+    </script>
+}

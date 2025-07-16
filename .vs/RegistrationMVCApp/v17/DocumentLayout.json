@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\data\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\data\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\views\\registration\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\views\\registration\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\views\\registration\\partials\\_candidatedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\views\\registration\\partials\\_candidatedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registrationmvcapp\\registrationmvcapp\\views\\registration\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5FEAC8E3-2E37-4651-8EED-C4C40D13766C}|RegistrationMVCApp\\RegistrationMVCApp.csproj|solutionrelative:registrationmvcapp\\views\\registration\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Program.cs",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Program.cs",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Program.cs",
+              "RelativeToolTip": "RegistrationMVCApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T07:30:46.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_CandidateDetails.cshtml",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\Partials\\_CandidateDetails.cshtml",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Views\\Registration\\Partials\\_CandidateDetails.cshtml",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\Partials\\_CandidateDetails.cshtml",
+              "RelativeToolTip": "RegistrationMVCApp\\Views\\Registration\\Partials\\_CandidateDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T06:21:57.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\Search.cshtml",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Views\\Registration\\Search.cshtml",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\Search.cshtml",
+              "RelativeToolTip": "RegistrationMVCApp\\Views\\Registration\\Search.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T11:38:44.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RegistrationMVCApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwE8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T11:14:34.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\Index.cshtml",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Views\\Registration\\Index.cshtml",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\Index.cshtml",
+              "RelativeToolTip": "RegistrationMVCApp\\Views\\Registration\\Index.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAYwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T05:47:33.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistrationModel.cs",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Models\\RegistrationModel.cs",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Models\\RegistrationModel.cs",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Models\\RegistrationModel.cs",
+              "RelativeToolTip": "RegistrationMVCApp\\Models\\RegistrationModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T11:03:09.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Controllers\\RegistrationController.cs",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "RegistrationMVCApp\\Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAmwKIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T05:16:56.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Data\\DbHelper.cs",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Data\\DbHelper.cs",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Data\\DbHelper.cs",
+              "RelativeToolTip": "RegistrationMVCApp\\Data\\DbHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T09:38:45.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\appsettings.json",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\appsettings.json",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\appsettings.json",
+              "RelativeToolTip": "RegistrationMVCApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T07:37:36.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\List.cshtml",
+              "RelativeDocumentMoniker": "RegistrationMVCApp\\Views\\Registration\\List.cshtml",
+              "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\RegistrationMVCApp\\RegistrationMVCApp\\Views\\Registration\\List.cshtml",
+              "RelativeToolTip": "RegistrationMVCApp\\Views\\Registration\\List.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAMEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T07:28:01.534Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
