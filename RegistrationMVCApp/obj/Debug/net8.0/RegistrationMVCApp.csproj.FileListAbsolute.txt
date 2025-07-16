@@ -84,3 +84,4 @@ D:\MCKVIE\Personal\IECS Internship Tasks\.NET Projects\RegistrationMVCApp\Regist
 D:\MCKVIE\Personal\IECS Internship Tasks\.NET Projects\RegistrationMVCApp\RegistrationMVCApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\MCKVIE\Personal\IECS Internship Tasks\.NET Projects\RegistrationMVCApp\RegistrationMVCApp\obj\Debug\net8.0\RegistrationMVCApp.csproj.AssemblyReference.cache
 D:\MCKVIE\Personal\IECS Internship Tasks\.NET Projects\RegistrationMVCApp\RegistrationMVCApp\obj\Debug\net8.0\Registra.9209C767.Up2Date
+D:\MCKVIE\Personal\IECS Internship Tasks\.NET Projects\RegistrationMVCApp\RegistrationMVCApp\obj\Debug\net8.0\RegistrationMVCApp.sourcelink.json
