@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\Registration_Form\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C35991D0-1DB3-45D4-953C-37B38606BEF8}|Registration_Form\\Registration_Form.csproj|D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\Registration_Form\\registration_form\\candidate_registration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C35991D0-1DB3-45D4-953C-37B38606BEF8}|Registration_Form\\Registration_Form.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registration_form\\registration_form\\candidate_registration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C35991D0-1DB3-45D4-953C-37B38606BEF8}|Registration_Form\\Registration_Form.csproj|solutionrelative:registration_form\\candidate_registration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C35991D0-1DB3-45D4-953C-37B38606BEF8}|Registration_Form\\Registration_Form.csproj|d:\\mckvie\\personal\\iecs internship tasks\\.net projects\\registration_form\\registration_form\\candidate_registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C35991D0-1DB3-45D4-953C-37B38606BEF8}|Registration_Form\\Registration_Form.csproj|D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\Registration_Form\\registration_form\\candidate_registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C35991D0-1DB3-45D4-953C-37B38606BEF8}|Registration_Form\\Registration_Form.csproj|solutionrelative:registration_form\\candidate_registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Registration_Form\\Candidate_Registration.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-25T18:50:42.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T18:50:42.333Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Registration_Form\\Candidate_Registration.aspx.cs",
               "ToolTip": "D:\\MCKVIE\\Personal\\IECS Internship Tasks\\.NET Projects\\Registration_Form\\Registration_Form\\Candidate_Registration.aspx.cs",
               "RelativeToolTip": "Registration_Form\\Candidate_Registration.aspx.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAA/wF8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAswGIAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-28T06:11:08.348Z",
               "EditorCaption": ""
