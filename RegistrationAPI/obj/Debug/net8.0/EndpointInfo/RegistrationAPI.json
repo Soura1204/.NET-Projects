@@ -1,0 +1,595 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RegistrationAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Login/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/GetAll": {
+      "get": {
+        "tags": [
+          "Registration"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/GetById/{id}": {
+      "get": {
+        "tags": [
+          "Registration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/Insert": {
+      "post": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Address",
+                  "DOB",
+                  "Email",
+                  "FName",
+                  "LName",
+                  "MobileNo",
+                  "Password"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "FName": {
+                    "type": "string"
+                  },
+                  "LName": {
+                    "type": "string"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "DOB": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "Email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "MobileNo": {
+                    "pattern": "^\\d{10}$",
+                    "type": "string",
+                    "format": "tel"
+                  },
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "ImagePath": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string",
+                    "format": "password"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "FName": {
+                  "style": "form"
+                },
+                "LName": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "DOB": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "MobileNo": {
+                  "style": "form"
+                },
+                "Image": {
+                  "style": "form"
+                },
+                "ImagePath": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/Update": {
+      "put": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Address",
+                  "DOB",
+                  "Email",
+                  "FName",
+                  "LName",
+                  "MobileNo",
+                  "Password"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "FName": {
+                    "type": "string"
+                  },
+                  "LName": {
+                    "type": "string"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "DOB": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "Email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "MobileNo": {
+                    "pattern": "^\\d{10}$",
+                    "type": "string",
+                    "format": "tel"
+                  },
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "ImagePath": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string",
+                    "format": "password"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "FName": {
+                  "style": "form"
+                },
+                "LName": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "DOB": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "MobileNo": {
+                  "style": "form"
+                },
+                "Image": {
+                  "style": "form"
+                },
+                "ImagePath": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Registration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/Search": {
+      "get": {
+        "tags": [
+          "Registration"
+        ],
+        "parameters": [
+          {
+            "name": "term",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/GetCandidateFullDetails/{id}": {
+      "get": {
+        "tags": [
+          "Registration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Registration/UpdateFullDetails": {
+      "put": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "CandidateDetails.Aadhar_No",
+                  "CandidateDetails.Company_Name",
+                  "CandidateDetails.Dept",
+                  "CandidateDetails.Gender",
+                  "CandidateDetails.Highest_Qualification",
+                  "CandidateDetails.Mode",
+                  "CandidateDetails.Pan_No",
+                  "CandidateDetails.Post",
+                  "Registration.Address",
+                  "Registration.DOB",
+                  "Registration.Email",
+                  "Registration.FName",
+                  "Registration.LName",
+                  "Registration.MobileNo",
+                  "Registration.Password"
+                ],
+                "type": "object",
+                "properties": {
+                  "Registration.Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Registration.FName": {
+                    "type": "string"
+                  },
+                  "Registration.LName": {
+                    "type": "string"
+                  },
+                  "Registration.Address": {
+                    "type": "string"
+                  },
+                  "Registration.DOB": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "Registration.Email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "Registration.MobileNo": {
+                    "pattern": "^\\d{10}$",
+                    "type": "string",
+                    "format": "tel"
+                  },
+                  "Registration.Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Registration.ImagePath": {
+                    "type": "string"
+                  },
+                  "Registration.Password": {
+                    "type": "string",
+                    "format": "password"
+                  },
+                  "CandidateDetails.Details_ID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CandidateDetails.Candt_ID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CandidateDetails.Aadhar_No": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Pan_No": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Gender": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Highest_Qualification": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Company_Name": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Dept": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Post": {
+                    "type": "string"
+                  },
+                  "CandidateDetails.Mode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Registration.Id": {
+                  "style": "form"
+                },
+                "Registration.FName": {
+                  "style": "form"
+                },
+                "Registration.LName": {
+                  "style": "form"
+                },
+                "Registration.Address": {
+                  "style": "form"
+                },
+                "Registration.DOB": {
+                  "style": "form"
+                },
+                "Registration.Email": {
+                  "style": "form"
+                },
+                "Registration.MobileNo": {
+                  "style": "form"
+                },
+                "Registration.Image": {
+                  "style": "form"
+                },
+                "Registration.ImagePath": {
+                  "style": "form"
+                },
+                "Registration.Password": {
+                  "style": "form"
+                },
+                "CandidateDetails.Details_ID": {
+                  "style": "form"
+                },
+                "CandidateDetails.Candt_ID": {
+                  "style": "form"
+                },
+                "CandidateDetails.Aadhar_No": {
+                  "style": "form"
+                },
+                "CandidateDetails.Pan_No": {
+                  "style": "form"
+                },
+                "CandidateDetails.Gender": {
+                  "style": "form"
+                },
+                "CandidateDetails.Highest_Qualification": {
+                  "style": "form"
+                },
+                "CandidateDetails.Company_Name": {
+                  "style": "form"
+                },
+                "CandidateDetails.Dept": {
+                  "style": "form"
+                },
+                "CandidateDetails.Post": {
+                  "style": "form"
+                },
+                "CandidateDetails.Mode": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "LoginViewModel": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
