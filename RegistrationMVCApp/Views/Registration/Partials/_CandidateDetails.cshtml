@@ -1,0 +1,93 @@
+﻿@model RegistrationApp.Models.CandidateFullDetailsModel
+
+<form id="updateCandidateForm" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <input asp-for="Registration.Id" type="hidden" />
+    <input asp-for="CandidateDetails.Details_ID" type="hidden" />
+
+    <h5>Basic Info</h5>
+    <div class="mb-2">
+        <label asp-for="Registration.FName"></label>
+        <input asp-for="Registration.FName" class="form-control" />
+        <span asp-validation-for="Registration.FName" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="Registration.LName"></label>
+        <input asp-for="Registration.LName" class="form-control" />
+        <span asp-validation-for="Registration.LName" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="Registration.Email"></label>
+        <input asp-for="Registration.Email" class="form-control" />
+        <span asp-validation-for="Registration.Email" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="Registration.MobileNo"></label>
+        <input asp-for="Registration.MobileNo" class="form-control" />
+        <span asp-validation-for="Registration.MobileNo" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="Registration.Address"></label>
+        <input asp-for="Registration.Address" class="form-control" />
+        <span asp-validation-for="Registration.Address" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="Registration.DOB"></label>
+        <input asp-for="Registration.DOB" class="form-control" type="date" />
+        <span asp-validation-for="Registration.DOB" class="text-danger"></span>
+    </div>
+
+    <h5 class="mt-4">Additional Info</h5>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Aadhar_No"></label>
+        <input asp-for="CandidateDetails.Aadhar_No" class="form-control" />
+        <span asp-validation-for="CandidateDetails.Aadhar_No" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Pan_No"></label>
+        <input asp-for="CandidateDetails.Pan_No" class="form-control" />
+        <span asp-validation-for="CandidateDetails.Pan_No" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Gender"></label>
+        <select asp-for="CandidateDetails.Gender" class="form-select">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <span asp-validation-for="CandidateDetails.Gender" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Highest_Qualification"></label>
+        <input asp-for="CandidateDetails.Highest_Qualification" class="form-control" />
+        <span asp-validation-for="CandidateDetails.Highest_Qualification" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Company_Name"></label>
+        <input asp-for="CandidateDetails.Company_Name" class="form-control" />
+        <span asp-validation-for="CandidateDetails.Company_Name" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Dept"></label>
+        <input asp-for="CandidateDetails.Dept" class="form-control" />
+        <span asp-validation-for="CandidateDetails.Dept" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Post"></label>
+        <input asp-for="CandidateDetails.Post" class="form-control" />
+        <span asp-validation-for="CandidateDetails.Post" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="CandidateDetails.Mode"></label>
+        <select asp-for="CandidateDetails.Mode" class="form-select">
+            <option value="">Select Mode</option>
+            <option>Hybrid</option>
+            <option>Home</option>
+            <option>Office</option>
+        </select>
+        <span asp-validation-for="CandidateDetails.Mode" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Update</button>
+</form>
