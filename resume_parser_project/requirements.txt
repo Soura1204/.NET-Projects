@@ -1,0 +1,6 @@
+flask
+flask-cors
+python-docx
+docx2txt
+pymupdf
+pyodbc
